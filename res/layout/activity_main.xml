@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            style="@style/style_RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:drawableTop="@drawable/icon_style_weixin"
+            android:text="@string/weixin"
+            android:textColor="@color/tx_style" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            style="@style/style_RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/icon_style_contact"
+            android:text="@string/contact"
+            android:textColor="@color/tx_style" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            style="@style/style_RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/icon_style_search"
+            android:text="@string/search"
+            android:textColor="@color/tx_style" />
+
+        <RadioButton
+            android:id="@+id/radio3"
+            style="@style/style_RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/icon_style_my"
+            android:text="@string/my"
+            android:textColor="@color/tx_style" />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/radioGroup1" />
+
+</RelativeLayout>

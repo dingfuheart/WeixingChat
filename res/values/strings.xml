@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">weixinChatView</string>
+    <string name="weixin">微信</string>
+    <string name="contact">通讯录</string>
+    <string name="search">发现</string>
+    <string name="my">我</string>
+
+</resources>
